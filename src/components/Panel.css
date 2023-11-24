@@ -1,0 +1,178 @@
+.PanelBox {
+  position: relative;
+  display: flex;
+  width: var(--panelWidth);
+  height: var(--panelHeight);
+}
+
+.Panel {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+    justify-content: center; */
+  background: linear-gradient(45deg, #7f7fd5, #91eae4);
+  position: absolute;
+  width: var(--panelWidth);
+  height: var(--panelHeight);
+  box-shadow: 0 0 12px -7px;
+  border-radius: 5px;
+  border: 2px solid #cdcdcd;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.DefaultImg {
+  margin: calc(50% - 25px) calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  background-image: url(../images/add.svg);
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.ImgBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImgBox > button {
+  background-image: url(../images/edit.png);
+  width: 50px;
+  height: 50px;
+  background-size: 57%;
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: 4px solid white;
+}
+.Img {
+  position: absolute;
+  width: 100%;
+  max-width: 512px;
+}
+
+.InputBox {
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto 40px;
+  gap: 10px;
+  border: 1px solid #cdcdcd;
+  background-color: white;
+  border-radius: 10px;
+  width: calc(100% - 40px);
+  margin: 20px;
+  display: none;
+}
+
+.InputBox > button {
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Input,
+.DialogueInput {
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+.DialogueInput {
+  border-left: 1px solid #848484;
+  padding-left: 10px;
+}
+
+.Send {
+  width: 40px;
+  cursor: pointer;
+}
+
+.Loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.Loading > img {
+  border-radius: 20px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+.Loading > button {
+  margin-top: -54px;
+  cursor: pointer;
+}
+.Dialogue {
+  background-image: url(../images/dialogueBox.png);
+  width: 100%;
+  height: 125px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  margin-top: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* backdrop-filter: blur(4px); */
+}
+
+.Dialogue > span {
+  max-width: 200px;
+  color: white;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px black;
+}
+
+@media only screen and (max-width: 600px) {
+  .Panel {
+    transition: 0s;
+  }
+  /* .InputBox {
+        grid-template-columns: auto 40px;
+        bottom: 60px;
+    }
+
+    .Input, .DialogueInput {
+        height: 40px;
+        border: none;
+        padding-left: 0px;
+    }
+
+    .InputBox > button {
+        grid-row: 1 / span 2;
+        grid-column: 2;
+    } */
+}
+
+.__markerjs2_ {
+  z-index: 300;
+}

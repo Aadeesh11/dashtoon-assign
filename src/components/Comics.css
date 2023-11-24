@@ -1,0 +1,47 @@
+/* .ComicsBox {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    box-shadow: 0 0 12px -7px;
+    border-radius: 5px;
+    border: 2px solid #d4d4d4;
+    z-index: 3;
+    background: white;
+    display: grid;
+    grid-template-rows: 40px auto 40px;
+}
+#Comics {
+    overflow-y: scroll;   
+}
+.Title {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #d4d4d4;
+    border-radius: 8px;
+}
+
+#Add {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(45deg, #2da9c7, #51bc9f);
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#Close {
+    width: 45px;
+    margin: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+#Close:active, #Add:active {
+    transform: scale(0.9);
+} */

@@ -1,0 +1,30 @@
+#ComicStrip {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1600px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+#ComicStrip > h1 {
+  color: white;
+  font-size: 500%;
+  margin: 0;
+  padding-top: 30px;
+}
+
+#ComicStrip > p {
+  width: 100%;
+  text-align: right;
+  padding-right: 14%;
+  color: #ffe3dd;
+  margin-top: -20px;
+  font-size: 30px;
+  /* font-family: cursive; */
+}

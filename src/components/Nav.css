@@ -1,0 +1,40 @@
+.Nav {
+  gap: 10px;
+  padding: 10px;
+  flex-direction: row-reverse;
+  width: 90%;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 0 12px -7px;
+  border-radius: 5px;
+  border: 2px solid #d4d4d4;
+  height: 60px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  position: sticky;
+  top: 20px;
+  z-index: 2;
+  width: 100%;
+  backdrop-filter: blur(9px);
+  background-color: #fffaf49e;
+  box-shadow: 0 0 10px -4px;
+}
+
+.Edit {
+  /* right: 20px;
+    position: absolute; */
+  width: 70px;
+  height: 42px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(45deg, #8360c3, #2ebf91);
+  cursor: pointer;
+}
+
+.Edit:active {
+  transform: scale(0.9);
+}
